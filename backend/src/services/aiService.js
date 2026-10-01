@@ -1,25 +1,42 @@
 import axios from 'axios';
+import fs from 'fs';
 import { logger } from '../utils/logger.js';
-
-const AI_SERVICE_URL = process.env.AI_SERVICE_URL || 'http://localhost:8000';
 
 /**
  * AI Service abstraction layer.
  * Keeps AI provider details behind this interface.
- * To swap providers, update this service without touching controllers.
+ * Connects to FastAPI AI service via process.env.AI_SERVICE_URL (Vercel service binding or local).
  */
 class AIService {
   constructor() {
-    this.baseUrl = AI_SERVICE_URL;
     this.timeout = 120000; // 2 minutes
+  }
+
+  getServiceUrl() {
+    return (process.env.AI_SERVICE_URL || 'http://localhost:8000').replace(/\/$/, '');
   }
 
   async analyzeImage(imagePath, userInstruction = '') {
     try {
-      const response = await axios.post(`${this.baseUrl}/analyze/image`, {
-        image_path: imagePath,
-        user_instruction: userInstruction,
-      }, { timeout: this.timeout });
+      const url = this.getServiceUrl();
+      let imageBase64 = null;
+      if (imagePath && fs.existsSync(imagePath)) {
+        try {
+          imageBase64 = fs.readFileSync(imagePath).toString('base64');
+        } catch (e) {
+          logger.warn(`Could not read image for base64 serialization: ${e.message}`);
+        }
+      }
+
+      const response = await axios.post(
+        `${url}/analyze/image`,
+        {
+          image_path: imagePath || '',
+          image_base64: imageBase64,
+          user_instruction: userInstruction || '',
+        },
+        { timeout: this.timeout }
+      );
 
       return this.validateAnalysisResponse(response.data);
     } catch (error) {
@@ -27,7 +44,7 @@ class AIService {
         throw new Error('AI service is unavailable. Please ensure the Python AI service is running.');
       }
       if (error.response?.status === 503) {
-        throw new Error('AI model is not configured. Please set up Ollama with a vision model.');
+        throw new Error('AI model is not configured. Please set up Ollama with a vision model or an external AI provider.');
       }
       throw error;
     }
@@ -35,13 +52,28 @@ class AIService {
 
   async analyzeWebsite(url, screenshotPath, htmlContent, axeResults, userInstruction = '') {
     try {
-      const response = await axios.post(`${this.baseUrl}/analyze/website`, {
-        url,
-        screenshot_path: screenshotPath,
-        html_content: htmlContent,
-        axe_results: axeResults,
-        user_instruction: userInstruction,
-      }, { timeout: this.timeout });
+      const serviceUrl = this.getServiceUrl();
+      let screenshotBase64 = null;
+      if (screenshotPath && fs.existsSync(screenshotPath)) {
+        try {
+          screenshotBase64 = fs.readFileSync(screenshotPath).toString('base64');
+        } catch (e) {
+          logger.warn(`Could not read screenshot for base64: ${e.message}`);
+        }
+      }
+
+      const response = await axios.post(
+        `${serviceUrl}/analyze/website`,
+        {
+          url,
+          screenshot_path: screenshotPath || '',
+          screenshot_base64: screenshotBase64,
+          html_content: htmlContent || '',
+          axe_results: axeResults,
+          user_instruction: userInstruction || '',
+        },
+        { timeout: this.timeout }
+      );
 
       return this.validateAnalysisResponse(response.data);
     } catch (error) {
@@ -54,11 +86,16 @@ class AIService {
 
   async generateCode(analysisData, redesignImagePath, userInstruction = '') {
     try {
-      const response = await axios.post(`${this.baseUrl}/generate/code`, {
-        analysis: analysisData,
-        redesign_image_path: redesignImagePath,
-        user_instruction: userInstruction,
-      }, { timeout: this.timeout });
+      const serviceUrl = this.getServiceUrl();
+      const response = await axios.post(
+        `${serviceUrl}/generate/code`,
+        {
+          analysis: analysisData,
+          redesign_image_path: redesignImagePath,
+          user_instruction: userInstruction,
+        },
+        { timeout: this.timeout }
+      );
 
       return response.data;
     } catch (error) {
@@ -71,7 +108,8 @@ class AIService {
 
   async checkHealth() {
     try {
-      const response = await axios.get(`${this.baseUrl}/health`, { timeout: 5000 });
+      const serviceUrl = this.getServiceUrl();
+      const response = await axios.get(`${serviceUrl}/health`, { timeout: 5000 });
       return response.data;
     } catch (error) {
       return { status: 'unavailable', error: error.message };

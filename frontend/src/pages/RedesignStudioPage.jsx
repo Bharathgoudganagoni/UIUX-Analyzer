@@ -8,7 +8,10 @@ import {
 import { useAnalysis } from '../contexts/AnalysisContext';
 import { redesignApi } from '../services/api';
 
-const BACKEND = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const BACKEND =
+  import.meta.env.VITE_API_URL !== undefined && import.meta.env.VITE_API_URL !== ''
+    ? import.meta.env.VITE_API_URL
+    : (import.meta.env.DEV ? 'http://localhost:3001' : '');
 
 export default function RedesignStudioPage() {
   const navigate = useNavigate();

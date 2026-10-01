@@ -9,10 +9,14 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const redesignDir = path.join(__dirname, '../../uploads/redesigns');
-if (!fs.existsSync(redesignDir)) {
-  fs.mkdirSync(redesignDir, { recursive: true });
-}
+const isVercel = Boolean(process.env.VERCEL);
+const uploadBase = isVercel ? '/tmp/uploads' : path.join(__dirname, '../../uploads');
+const redesignDir = path.join(uploadBase, 'redesigns');
+try {
+  if (!fs.existsSync(redesignDir)) {
+    fs.mkdirSync(redesignDir, { recursive: true });
+  }
+} catch (_) {}
 
 /**
  * Image Generation Service.

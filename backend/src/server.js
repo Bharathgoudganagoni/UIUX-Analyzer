@@ -4,6 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { createServer } from 'http';
@@ -45,18 +46,27 @@ app.use(
 const allowedOrigins = [
   'http://localhost:5173',
   'http://127.0.0.1:5173',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000',
+  'http://localhost:3001',
 ];
 
 app.use(
   cors({
     origin: (origin, callback) => {
       // Allow requests without an Origin header
-      // (Postman, server-to-server requests, etc.)
+      // (Postman, server-to-server requests, same-origin, etc.)
       if (!origin) {
         return callback(null, true);
       }
 
-      if (allowedOrigins.includes(origin)) {
+      if (
+        allowedOrigins.includes(origin) ||
+        (process.env.FRONTEND_URL && origin === process.env.FRONTEND_URL) ||
+        (process.env.VERCEL_URL && origin === `https://${process.env.VERCEL_URL}`) ||
+        origin.endsWith('.vercel.app') ||
+        /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)
+      ) {
         return callback(null, true);
       }
 
@@ -128,9 +138,17 @@ app.use('/api/', rateLimiter);
 // Static File Serving for Uploads
 // =====================================================
 
+const isVercel = Boolean(process.env.VERCEL);
+const uploadsDir = isVercel ? '/tmp/uploads' : join(__dirname, '../uploads');
+try {
+  if (!fs.existsSync(uploadsDir)) {
+    fs.mkdirSync(uploadsDir, { recursive: true });
+  }
+} catch (_) {}
+
 app.use(
   '/uploads',
-  express.static(join(__dirname, '../uploads'), {
+  express.static(uploadsDir, {
     setHeaders: (res) => {
       res.setHeader(
         'Cross-Origin-Resource-Policy',
@@ -156,10 +174,6 @@ app.use('/api/code-generation', codeGenRoutes);
 
 app.use('/api/website', websiteRoutes);
 
-// =====================================================
-// 404 Handler
-// =====================================================
-
 app.use((req, res) => {
   res.status(404).json({
     error: 'Route not found',
@@ -167,36 +181,26 @@ app.use((req, res) => {
   });
 });
 
-// =====================================================
-// Global Error Handler
-// =====================================================
-
 app.use(errorHandler);
-
-// =====================================================
-// Create HTTP Server
-// =====================================================
 
 const server = createServer(app);
 
-// =====================================================
-// Start Server
-// =====================================================
+if (!process.env.VERCEL || process.env.PORT) {
+  server.listen(PORT, () => {
+    logger.info(
+      `🚀 Backend server running on http://localhost:${PORT}`
+    );
 
-server.listen(PORT, () => {
-  logger.info(
-    `🚀 Backend server running on http://localhost:${PORT}`
-  );
+    logger.info(
+      `📊 Environment: ${process.env.NODE_ENV || 'development'}`
+    );
 
-  logger.info(
-    `📊 Environment: ${process.env.NODE_ENV || 'development'}`
-  );
-
-  logger.info(
-    `🤖 AI Service: ${
-      process.env.AI_SERVICE_URL || 'http://localhost:8000'
-    }`
-  );
-});
+    logger.info(
+      `🤖 AI Service: ${
+        process.env.AI_SERVICE_URL || 'http://localhost:8000'
+      }`
+    );
+  });
+}
 
 export default app;

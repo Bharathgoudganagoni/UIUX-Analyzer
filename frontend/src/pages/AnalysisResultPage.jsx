@@ -194,7 +194,7 @@ export default function AnalysisResultPage() {
                 background: 'var(--bg-tertiary)',
               }}>
                 <img
-                  src={`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}${currentImage}`}
+                  src={`${import.meta.env.VITE_API_URL !== undefined && import.meta.env.VITE_API_URL !== '' ? import.meta.env.VITE_API_URL : (import.meta.env.DEV ? 'http://localhost:3001' : '')}${currentImage}`}
                   alt="Original UI design"
                   style={{ width: '100%', display: 'block', maxHeight: 500, objectFit: 'contain' }}
                   onError={(e) => { e.target.style.display = 'none'; }}

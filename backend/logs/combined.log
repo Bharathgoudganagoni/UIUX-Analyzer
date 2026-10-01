@@ -609,3 +609,6 @@ Please make sure your database server is running at `localhost:5432`.. Using per
 2026-09-29 15:33:17 [info]: ::1 - - [29/Sep/2026:10:03:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
 2026-09-29 17:18:06 [info]: ::1 - - [29/Sep/2026:11:48:06 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
 2026-09-29 17:18:06 [info]: ::1 - - [29/Sep/2026:11:48:06 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-10-01 11:47:43 [info]: 🚀 Backend server running on http://localhost:3001
+2026-10-01 11:47:43 [info]: 📊 Environment: development
+2026-10-01 11:47:43 [info]: 🤖 AI Service: http://localhost:8000
