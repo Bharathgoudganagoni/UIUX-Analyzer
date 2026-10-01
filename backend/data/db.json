@@ -1,0 +1,304 @@
+{
+  "projects": [
+    {
+      "id": "ba362276-52db-40bf-892b-fa9f110e84a1",
+      "userId": "usr_22641a05d9_vaagdevi_edu_in",
+      "name": "keezenix",
+      "createdAt": "2026-09-29T07:47:36.008Z",
+      "updatedAt": "2026-09-29T07:47:36.038Z"
+    }
+  ],
+  "analyses": [
+    {
+      "id": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "projectId": "ba362276-52db-40bf-892b-fa9f110e84a1",
+      "userId": "usr_22641a05d9_vaagdevi_edu_in",
+      "type": "URL",
+      "sourceUrl": "https://www.keezenix.com/",
+      "originalImagePath": "B:\\Projects\\UI-UX_Analyzer\\backend\\uploads\\screenshots\\screenshot-6ca518f3-fcf1-4057-ac09-3b6c4926d3dd.png",
+      "status": "COMPLETED",
+      "userInstruction": null,
+      "summary": "UI/UX audit for https://www.keezenix.com/. The interface displays structured layout elements, with key opportunities to enhance visual hierarchy, improve responsive padding consistency, and resolve accessibility compliance checks.",
+      "rawAiResponse": {
+        "summary": "UI/UX audit for https://www.keezenix.com/. The interface displays structured layout elements, with key opportunities to enhance visual hierarchy, improve responsive padding consistency, and resolve accessibility compliance checks.",
+        "categories": {
+          "layout": {
+            "issues": [
+              {
+                "title": "Asymmetrical Grid Alignment",
+                "description": "Content containers appear to use variable outer margins across responsive breakpoints.",
+                "whyItMatters": "Inconsistent column alignment increases cognitive load and weakens structural rhythm.",
+                "recommendation": "Adopt a unified 12-column grid system with fixed max-width constraints (e.g., 1200px) and uniform gutter spacing.",
+                "severity": "medium"
+              }
+            ]
+          },
+          "typography": {
+            "issues": [
+              {
+                "title": "Insufficient Heading-to-Body Contrast",
+                "description": "The size and weight delta between H1 headings and H2 subheaders lacks distinct differentiation.",
+                "whyItMatters": "Clear typography scaling allows users to scan page sections rapidly and understand information hierarchy.",
+                "recommendation": "Implement a modular type scale (e.g. Major Third 1.25 ratio: H1 at 2.25rem/36px with 700 weight, H2 at 1.5rem/24px with 600 weight).",
+                "severity": "high"
+              }
+            ]
+          },
+          "color": {
+            "issues": [
+              {
+                "title": "Ambiguous Interactive Accent Colors",
+                "description": "Primary action buttons share similar hue and saturation with static decorative elements.",
+                "whyItMatters": "Users may experience hesitation identifying clickable primary calls to action.",
+                "recommendation": "Reserve high-chroma primary accent colors exclusively for interactive elements like buttons and active tabs.",
+                "severity": "medium"
+              }
+            ]
+          },
+          "spacing": {
+            "issues": [
+              {
+                "title": "Crowded Touch Target Padding",
+                "description": "Interactive buttons and link items have padding under the recommended 44x44px minimum touch target.",
+                "whyItMatters": "Leads to accidental mis-clicks, particularly on mobile and touchscreen devices.",
+                "recommendation": "Increase button padding to minimum 12px vertical and 20px horizontal (min-height: 44px).",
+                "severity": "medium"
+              }
+            ]
+          },
+          "hierarchy": {
+            "issues": [
+              {
+                "title": "Competing Primary Calls-to-Action",
+                "description": "Multiple prominent buttons are rendered with identical visual weight within the same viewport.",
+                "whyItMatters": "Causes decision fatigue and reduces conversion rates on key user funnels.",
+                "recommendation": "Establish a single high-emphasis primary button style and convert secondary actions to ghost/outline variants.",
+                "severity": "high"
+              }
+            ]
+          },
+          "accessibility": {
+            "issues": [
+              {
+                "title": "Elements must meet minimum color contrast ratio thresholds",
+                "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "whyItMatters": "Affects WCAG 2.1 conformance (serious impact).",
+                "recommendation": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+                "severity": "high"
+              },
+              {
+                "title": "Heading levels should only increase by one",
+                "description": "Ensures the order of headings is semantically correct",
+                "whyItMatters": "Affects WCAG 2.1 conformance (moderate impact).",
+                "recommendation": "https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+                "severity": "medium"
+              },
+              {
+                "title": "Links must have discernible text",
+                "description": "Ensures links have discernible text",
+                "whyItMatters": "Affects WCAG 2.1 conformance (serious impact).",
+                "recommendation": "https://dequeuniversity.com/rules/axe/4.9/link-name?application=axeAPI",
+                "severity": "high"
+              }
+            ],
+            "automatedChecks": [
+              {
+                "title": "Elements must meet minimum color contrast ratio thresholds",
+                "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "whyItMatters": "This is a serious accessibility issue affecting users who rely on assistive technology.",
+                "recommendation": "See: https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+                "severity": "high",
+                "source": "AXE_CORE",
+                "elements": "<a class=\"btn-hero\" href=\"/contact\">\n<span class=\"green-badge\">About Keezenix</span>\n<p class=\"text-muted-foreground leading-relaxed mb-5\">"
+              },
+              {
+                "title": "Heading levels should only increase by one",
+                "description": "Ensures the order of headings is semantically correct",
+                "whyItMatters": "This is a moderate accessibility issue affecting users who rely on assistive technology.",
+                "recommendation": "See: https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+                "severity": "medium",
+                "source": "AXE_CORE",
+                "elements": "<h4 class=\"font-semibold text-sm text-foreground mb-1\">Experienced Team</h4>\n<h4 class=\"font-semibold text-foreground text-sm\">Rahul Verma</h4>\n<h4 class=\"text-white font-semibold text-sm uppercase tracking-widest mb-5\">Quick Links</h4>"
+              },
+              {
+                "title": "Links must have discernible text",
+                "description": "Ensures links have discernible text",
+                "whyItMatters": "This is a serious accessibility issue affecting users who rely on assistive technology.",
+                "recommendation": "See: https://dequeuniversity.com/rules/axe/4.9/link-name?application=axeAPI",
+                "severity": "high",
+                "source": "AXE_CORE",
+                "elements": "<a href=\"https://www.linkedin.com/company/keezenixglobal/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/70 hover:bg-secondary hover:text-white transition\">\n<a href=\"https://www.instagram.com/keezenixglobal/?utm_source=ig_web_button_share_sheet\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/70 hover:bg-secondary hover:text-white transition\">\n<a href=\"https://www.facebook.com/profile.php?id=61573277142575\" class=\"w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/70 hover:bg-secondary hover:text-white transition\">"
+              }
+            ]
+          }
+        },
+        "recommendations": [
+          "Establish a single unambiguous Primary CTA with distinct accent color.",
+          "Enforce strict 8px spatial grid system for consistent margins and padding.",
+          "Elevate typography hierarchy with distinct weight scaling for headings.",
+          "Verify WCAG AA 4.5:1 contrast ratios across all subtext and interactive states."
+        ],
+        "redesignInstructions": [
+          "Streamline visual hierarchy by emphasizing the core headline and primary action button.",
+          "Incorporate generous whitespace (padding: 48px, gap: 24px) to let content breathe.",
+          "Apply modern subtle borders (1px solid rgba(255,255,255,0.1)) and soft surface elevation.",
+          "Use high-contrast accessible typography with -0.02em letter spacing for headlines."
+        ],
+        "axeSummary": {
+          "violations": 3,
+          "passes": 35,
+          "incomplete": 1
+        }
+      },
+      "createdAt": "2026-09-29T07:47:36.038Z",
+      "updatedAt": "2026-09-29T07:47:36.038Z"
+    }
+  ],
+  "issues": [
+    {
+      "id": "2aaeeb0b-f73d-4925-81ba-4e3bbf04c353",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "LAYOUT",
+      "title": "Asymmetrical Grid Alignment",
+      "description": "Content containers appear to use variable outer margins across responsive breakpoints.",
+      "whyItMatters": "Inconsistent column alignment increases cognitive load and weakens structural rhythm.",
+      "recommendation": "Adopt a unified 12-column grid system with fixed max-width constraints (e.g., 1200px) and uniform gutter spacing.",
+      "severity": "MEDIUM",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.045Z"
+    },
+    {
+      "id": "727b5042-be57-443c-bc42-22e1161a6368",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "TYPOGRAPHY",
+      "title": "Insufficient Heading-to-Body Contrast",
+      "description": "The size and weight delta between H1 headings and H2 subheaders lacks distinct differentiation.",
+      "whyItMatters": "Clear typography scaling allows users to scan page sections rapidly and understand information hierarchy.",
+      "recommendation": "Implement a modular type scale (e.g. Major Third 1.25 ratio: H1 at 2.25rem/36px with 700 weight, H2 at 1.5rem/24px with 600 weight).",
+      "severity": "HIGH",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "b87330f8-4098-4286-9a36-7fbf8173b0c9",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "COLOR",
+      "title": "Ambiguous Interactive Accent Colors",
+      "description": "Primary action buttons share similar hue and saturation with static decorative elements.",
+      "whyItMatters": "Users may experience hesitation identifying clickable primary calls to action.",
+      "recommendation": "Reserve high-chroma primary accent colors exclusively for interactive elements like buttons and active tabs.",
+      "severity": "MEDIUM",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "ec7f5ea0-0c43-48e5-ac04-cec5790273a1",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "SPACING",
+      "title": "Crowded Touch Target Padding",
+      "description": "Interactive buttons and link items have padding under the recommended 44x44px minimum touch target.",
+      "whyItMatters": "Leads to accidental mis-clicks, particularly on mobile and touchscreen devices.",
+      "recommendation": "Increase button padding to minimum 12px vertical and 20px horizontal (min-height: 44px).",
+      "severity": "MEDIUM",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "377dc8b8-79e2-4314-9242-4ca7f6d4f0aa",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "HIERARCHY",
+      "title": "Competing Primary Calls-to-Action",
+      "description": "Multiple prominent buttons are rendered with identical visual weight within the same viewport.",
+      "whyItMatters": "Causes decision fatigue and reduces conversion rates on key user funnels.",
+      "recommendation": "Establish a single high-emphasis primary button style and convert secondary actions to ghost/outline variants.",
+      "severity": "HIGH",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "c399e66c-5ba7-4ef3-b87e-75cfd287f968",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "ACCESSIBILITY",
+      "title": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "whyItMatters": "Affects WCAG 2.1 conformance (serious impact).",
+      "recommendation": "https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+      "severity": "HIGH",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "093726c6-c789-4d98-b36b-4f0375f5c43b",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "ACCESSIBILITY",
+      "title": "Heading levels should only increase by one",
+      "description": "Ensures the order of headings is semantically correct",
+      "whyItMatters": "Affects WCAG 2.1 conformance (moderate impact).",
+      "recommendation": "https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+      "severity": "MEDIUM",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "1a1bd99e-61b4-4ff3-9860-ce72b42c62e4",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "ACCESSIBILITY",
+      "title": "Links must have discernible text",
+      "description": "Ensures links have discernible text",
+      "whyItMatters": "Affects WCAG 2.1 conformance (serious impact).",
+      "recommendation": "https://dequeuniversity.com/rules/axe/4.9/link-name?application=axeAPI",
+      "severity": "HIGH",
+      "source": "AI",
+      "elements": null,
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "30d8437a-f016-407c-ae13-aae71640e2d3",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "ACCESSIBILITY",
+      "title": "Elements must meet minimum color contrast ratio thresholds",
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "whyItMatters": "This is a serious accessibility issue affecting users who rely on assistive technology.",
+      "recommendation": "See: https://dequeuniversity.com/rules/axe/4.9/color-contrast?application=axeAPI",
+      "severity": "HIGH",
+      "source": "AXE_CORE",
+      "elements": "<a class=\"btn-hero\" href=\"/contact\">\n<span class=\"green-badge\">About Keezenix</span>\n<p class=\"text-muted-foreground leading-relaxed mb-5\">",
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "d78cd2be-5f8a-4d87-932c-bfa999242f87",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "ACCESSIBILITY",
+      "title": "Heading levels should only increase by one",
+      "description": "Ensures the order of headings is semantically correct",
+      "whyItMatters": "This is a moderate accessibility issue affecting users who rely on assistive technology.",
+      "recommendation": "See: https://dequeuniversity.com/rules/axe/4.9/heading-order?application=axeAPI",
+      "severity": "MEDIUM",
+      "source": "AXE_CORE",
+      "elements": "<h4 class=\"font-semibold text-sm text-foreground mb-1\">Experienced Team</h4>\n<h4 class=\"font-semibold text-foreground text-sm\">Rahul Verma</h4>\n<h4 class=\"text-white font-semibold text-sm uppercase tracking-widest mb-5\">Quick Links</h4>",
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    },
+    {
+      "id": "32c81199-de79-4a5a-a8b4-f81a96544124",
+      "analysisId": "0b7c38ab-6a81-42fd-9298-a439ca45a3ff",
+      "category": "ACCESSIBILITY",
+      "title": "Links must have discernible text",
+      "description": "Ensures links have discernible text",
+      "whyItMatters": "This is a serious accessibility issue affecting users who rely on assistive technology.",
+      "recommendation": "See: https://dequeuniversity.com/rules/axe/4.9/link-name?application=axeAPI",
+      "severity": "HIGH",
+      "source": "AXE_CORE",
+      "elements": "<a href=\"https://www.linkedin.com/company/keezenixglobal/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/70 hover:bg-secondary hover:text-white transition\">\n<a href=\"https://www.instagram.com/keezenixglobal/?utm_source=ig_web_button_share_sheet\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/70 hover:bg-secondary hover:text-white transition\">\n<a href=\"https://www.facebook.com/profile.php?id=61573277142575\" class=\"w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/70 hover:bg-secondary hover:text-white transition\">",
+      "createdAt": "2026-09-29T07:47:36.046Z"
+    }
+  ],
+  "redesigns": [],
+  "generatedCodes": []
+}

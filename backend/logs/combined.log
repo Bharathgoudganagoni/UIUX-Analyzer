@@ -1,0 +1,611 @@
+2026-09-28 19:46:13 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-28 19:46:13 [info]: 📊 Environment: development
+2026-09-28 19:46:13 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-28 19:46:24 [info]: ::1 - - [28/Sep/2026:14:16:24 +0000] "GET /api/health HTTP/1.1" 200 176 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-09-28 19:46:43 [error]: SyntaxError: Bad escaped character in JSON at position 10 (line 1 column 11)
+    at JSON.parse (<anonymous>)
+    at parse (B:\Projects\UI-UX_Analyzer\backend\node_modules\body-parser\lib\types\json.js:96:19)
+    at B:\Projects\UI-UX_Analyzer\backend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (B:\Projects\UI-UX_Analyzer\backend\node_modules\raw-body\index.js:238:16)
+    at done (B:\Projects\UI-UX_Analyzer\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (B:\Projects\UI-UX_Analyzer\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-09-28 19:46:43 [info]: ::1 - - [28/Sep/2026:14:16:43 +0000] "POST /api/analysis HTTP/1.1" 400 990 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-09-28 19:47:06 [info]: ::1 - - [28/Sep/2026:14:17:06 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "-" "node"
+2026-09-28 19:47:15 [error]: Code generation failed:
+2026-09-28 19:47:15 [info]: ::1 - - [28/Sep/2026:14:17:15 +0000] "POST /api/code-generation HTTP/1.1" 503 201 "-" "node"
+2026-09-28 19:47:19 [warn]: ⚠️  Database connection failed: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Running without database.
+2026-09-28 19:50:40 [error]: PrismaClientInitializationError: 
+Invalid `prisma.project.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at $n.handleRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async getProjects (file:///B:/Projects/UI-UX_Analyzer/backend/src/controllers/projectsController.js:7:22)
+2026-09-28 19:50:40 [info]: ::1 - - [28/Sep/2026:14:20:40 +0000] "GET /api/projects HTTP/1.1" 500 1050 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 19:50:44 [error]: PrismaClientInitializationError: 
+Invalid `prisma.project.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at $n.handleRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async getProjects (file:///B:/Projects/UI-UX_Analyzer/backend/src/controllers/projectsController.js:7:22)
+2026-09-28 19:50:44 [info]: ::1 - - [28/Sep/2026:14:20:44 +0000] "GET /api/projects HTTP/1.1" 500 1050 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 19:51:32 [error]: PrismaClientInitializationError: 
+Invalid `prisma.project.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at $n.handleRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async getProjects (file:///B:/Projects/UI-UX_Analyzer/backend/src/controllers/projectsController.js:7:22)
+2026-09-28 19:51:32 [info]: ::1 - - [28/Sep/2026:14:21:32 +0000] "GET /api/projects HTTP/1.1" 500 1050 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 19:51:36 [error]: PrismaClientInitializationError: 
+Invalid `prisma.project.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at $n.handleRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async getProjects (file:///B:/Projects/UI-UX_Analyzer/backend/src/controllers/projectsController.js:7:22)
+2026-09-28 19:51:36 [info]: ::1 - - [28/Sep/2026:14:21:36 +0000] "GET /api/projects HTTP/1.1" 500 1050 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 19:51:40 [error]: PrismaClientInitializationError: 
+Invalid `prisma.project.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at $n.handleRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async getProjects (file:///B:/Projects/UI-UX_Analyzer/backend/src/controllers/projectsController.js:7:22)
+2026-09-28 19:51:40 [info]: ::1 - - [28/Sep/2026:14:21:40 +0000] "GET /api/projects HTTP/1.1" 500 1050 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 19:51:44 [error]: PrismaClientInitializationError: 
+Invalid `prisma.project.findMany()` invocation:
+
+
+Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.
+    at $n.handleRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:7615)
+    at $n.handleAndLogRequestError (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6623)
+    at $n.request (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:121:6307)
+    at async l (B:\Projects\UI-UX_Analyzer\backend\node_modules\@prisma\client\runtime\library.js:130:9633)
+    at async getProjects (file:///B:/Projects/UI-UX_Analyzer/backend/src/controllers/projectsController.js:7:22)
+2026-09-28 19:51:44 [info]: ::1 - - [28/Sep/2026:14:21:44 +0000] "GET /api/projects HTTP/1.1" 500 1050 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:01:26 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-28 20:01:26 [info]: 📊 Environment: development
+2026-09-28 20:01:26 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-28 20:02:04 [warn]: ⚠️  Database connection failed: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Running without database.
+2026-09-28 20:02:04 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:02:04 [info]: ::1 - - [28/Sep/2026:14:32:04 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-09-28 20:02:47 [info]: ::1 - - [28/Sep/2026:14:32:47 +0000] "POST /api/website/analyze HTTP/1.1" 503 171 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:03:06 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:06 [info]: ::1 - - [28/Sep/2026:14:33:06 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "node"
+2026-09-28 20:03:30 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:30 [info]: ::1 - - [28/Sep/2026:14:33:30 +0000] "GET /api/projects HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:03:35 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:35 [info]: ::1 - - [28/Sep/2026:14:33:35 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:03:39 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:39 [info]: ::1 - - [28/Sep/2026:14:33:39 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:03:43 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:43 [info]: ::1 - - [28/Sep/2026:14:33:43 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:03:48 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:48 [info]: ::1 - - [28/Sep/2026:14:33:48 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:03:52 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:03:52 [info]: ::1 - - [28/Sep/2026:14:33:52 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:04:43 [info]: ::1 - - [28/Sep/2026:14:34:43 +0000] "POST /api/website/analyze HTTP/1.1" 503 171 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:05:33 [info]: ::1 - - [28/Sep/2026:14:35:33 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:08:29 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:08:29 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:08:29 [info]: ::1 - - [28/Sep/2026:14:38:29 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:08:51 [info]: ::1 - - [28/Sep/2026:14:38:51 +0000] "GET /api/health HTTP/1.1" 200 176 "-" "node"
+2026-09-28 20:09:22 [info]: ::1 - - [28/Sep/2026:14:39:22 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:09:26 [info]: Image generation requested via provider: none
+2026-09-28 20:09:26 [info]: ::1 - - [28/Sep/2026:14:39:26 +0000] "POST /api/redesign HTTP/1.1" 200 232 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:09:29 [info]: Image generation requested via provider: none
+2026-09-28 20:09:29 [info]: ::1 - - [28/Sep/2026:14:39:29 +0000] "POST /api/redesign HTTP/1.1" 200 232 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:09:30 [info]: Image generation requested via provider: none
+2026-09-28 20:09:30 [info]: ::1 - - [28/Sep/2026:14:39:30 +0000] "POST /api/redesign HTTP/1.1" 200 232 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:09:58 [info]: ::1 - - [28/Sep/2026:14:39:58 +0000] "GET /api/health HTTP/1.1" 200 176 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:10:20 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:10:20 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:10:20 [info]: ::1 - - [28/Sep/2026:14:40:20 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:11:20 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:11:20 [info]: ::1 - - [28/Sep/2026:14:41:20 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:11:24 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:11:24 [info]: ::1 - - [28/Sep/2026:14:41:24 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:11:29 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:11:29 [info]: ::1 - - [28/Sep/2026:14:41:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:11:33 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:11:33 [info]: ::1 - - [28/Sep/2026:14:41:33 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:12:40 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:12:40 [info]: ::1 - - [28/Sep/2026:14:42:40 +0000] "GET /api/projects HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+2026-09-28 20:12:44 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:12:44 [info]: ::1 - - [28/Sep/2026:14:42:44 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+2026-09-28 20:14:03 [info]: ::1 - - [28/Sep/2026:14:44:03 +0000] "GET /api/health HTTP/1.1" 200 176 "-" "node"
+2026-09-28 20:14:03 [info]: ::1 - - [28/Sep/2026:14:44:03 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "-" "node"
+2026-09-28 20:14:07 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:14:07 [info]: ::1 - - [28/Sep/2026:14:44:07 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "node"
+2026-09-28 20:14:08 [error]: Code generation failed:
+2026-09-28 20:14:08 [info]: ::1 - - [28/Sep/2026:14:44:08 +0000] "POST /api/code-generation HTTP/1.1" 503 162 "-" "node"
+2026-09-28 20:14:45 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:14:45 [info]: ::1 - - [28/Sep/2026:14:44:45 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:14:49 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:14:49 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:14:49 [info]: ::1 - - [28/Sep/2026:14:44:49 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:14:49 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:14:49 [info]: ::1 - - [28/Sep/2026:14:44:49 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:14:53 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:14:53 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:14:53 [info]: ::1 - - [28/Sep/2026:14:44:53 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:17:27 [info]: Starting website analysis for: https://example.com
+2026-09-28 20:17:27 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:17:27 [info]: ::1 - - [28/Sep/2026:14:47:27 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "-" "node"
+2026-09-28 20:19:07 [info]: Starting website analysis for: https://example.com
+2026-09-28 20:36:53 [info]: Starting website analysis for: https://example.com
+2026-09-28 20:36:53 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:36:53 [info]: ::1 - - [28/Sep/2026:15:06:53 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "-" "node"
+2026-09-28 20:38:12 [info]: Starting website analysis for: https://example.com
+2026-09-28 20:38:12 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:38:12 [info]: ::1 - - [28/Sep/2026:15:08:12 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "-" "node"
+2026-09-28 20:38:42 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:38:42 [info]: ::1 - - [28/Sep/2026:15:08:42 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:38:46 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:38:46 [info]: ::1 - - [28/Sep/2026:15:08:46 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:39:01 [info]: Starting website analysis for: https://example.com
+2026-09-28 20:39:01 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:39:01 [info]: ::1 - - [28/Sep/2026:15:09:01 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "-" "node"
+2026-09-28 20:39:45 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:39:45 [info]: ::1 - - [28/Sep/2026:15:09:45 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:39:49 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:39:49 [info]: ::1 - - [28/Sep/2026:15:09:49 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:39:51 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:39:51 [error]: browserType.launch: Executable doesn't exist at C:\Users\bhara\AppData\Local\ms-playwright\chromium_headless_shell-1243\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+    at analyzeWebsite (B:\Projects\UI-UX_Analyzer\backend\src\controllers\websiteController.js:52:43)
+2026-09-28 20:39:51 [info]: ::1 - - [28/Sep/2026:15:09:51 +0000] "POST /api/website/analyze HTTP/1.1" 500 2087 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:41:31 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-28 20:41:31 [info]: 📊 Environment: development
+2026-09-28 20:41:31 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-28 20:42:25 [warn]: ⚠️  Database connection failed: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Running without database.
+2026-09-28 20:42:25 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:42:25 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:42:25 [info]: ::1 - - [28/Sep/2026:15:12:25 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+2026-09-28 20:42:25 [info]: ::1 - - [28/Sep/2026:15:12:25 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:42:29 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:42:29 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:42:29 [info]: ::1 - - [28/Sep/2026:15:12:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+2026-09-28 20:42:29 [info]: ::1 - - [28/Sep/2026:15:12:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:42:39 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:42:50 [warn]: DB unavailable for website analysis
+2026-09-28 20:42:50 [info]: ::1 - - [28/Sep/2026:15:12:50 +0000] "POST /api/website/analyze HTTP/1.1" 200 6579 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:42:50 [info]: ::1 - - [28/Sep/2026:15:12:50 +0000] "GET /uploads/screenshots/screenshot-314d19ba-62c5-4782-97b2-a89b5c37dba4.png HTTP/1.1" 200 1088957 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:43:00 [info]: Image generation requested via provider: none
+2026-09-28 20:43:00 [info]: ::1 - - [28/Sep/2026:15:13:00 +0000] "POST /api/redesign HTTP/1.1" 200 232 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:47:20 [info]: Image generation requested via provider: mock
+2026-09-28 20:47:26 [info]: ::1 - - [28/Sep/2026:15:17:26 +0000] "GET /api/projects HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:47:26 [info]: ::1 - - [28/Sep/2026:15:17:26 +0000] "GET /api/projects HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:47:28 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:47:28 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:47:28 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:47:28 [info]: ::1 - - [28/Sep/2026:15:17:28 +0000] "GET /api/projects HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:47:32 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:47:32 [info]: ::1 - - [28/Sep/2026:15:17:32 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:47:37 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:47:37 [info]: ::1 - - [28/Sep/2026:15:17:37 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:47:41 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:47:41 [info]: ::1 - - [28/Sep/2026:15:17:41 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:48:01 [warn]: DB unavailable, proceeding without persistence:
+2026-09-28 20:48:03 [info]: ::1 - - [28/Sep/2026:15:18:03 +0000] "POST /api/analysis HTTP/1.1" 200 3649 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:48:03 [info]: ::1 - - [28/Sep/2026:15:18:03 +0000] "GET /uploads/926e2cf8-9a6a-466f-85b5-96e79d37637e.png HTTP/1.1" 200 1718750 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:48:19 [info]: Image generation requested via provider: none
+2026-09-28 20:48:19 [info]: ::1 - - [28/Sep/2026:15:18:19 +0000] "POST /api/redesign HTTP/1.1" 200 232 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:49:01 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-28 20:49:01 [info]: 📊 Environment: development
+2026-09-28 20:49:01 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-28 20:49:17 [warn]: ⚠️  Database connection failed: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Running without database.
+2026-09-28 20:49:17 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:49:17 [info]: ::1 - - [28/Sep/2026:15:19:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:49:21 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:49:21 [info]: ::1 - - [28/Sep/2026:15:19:21 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:49:22 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-28 20:49:38 [warn]: DB unavailable for website analysis
+2026-09-28 20:49:38 [info]: ::1 - - [28/Sep/2026:15:19:38 +0000] "POST /api/website/analyze HTTP/1.1" 200 6579 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:49:38 [info]: ::1 - - [28/Sep/2026:15:19:38 +0000] "GET /uploads/screenshots/screenshot-97849e4c-29dd-463d-b460-af15b2adfa26.png HTTP/1.1" 200 1088957 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:49:50 [info]: Image generation requested via provider: mock
+2026-09-28 20:49:50 [info]: ::1 - - [28/Sep/2026:15:19:50 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:49:50 [info]: ::1 - - [28/Sep/2026:15:19:50 +0000] "GET /uploads/redesigns/redesign-5025c5e6-60a6-4fcd-ad39-630bc5073a02.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:19 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:19 [info]: ::1 - - [28/Sep/2026:15:20:19 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:19 [info]: ::1 - - [28/Sep/2026:15:20:19 +0000] "GET /uploads/redesigns/redesign-5bb2e95a-5bd3-41f7-8529-5657063205ca.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:20 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:20 [info]: ::1 - - [28/Sep/2026:15:20:20 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:20 [info]: ::1 - - [28/Sep/2026:15:20:20 +0000] "GET /uploads/redesigns/redesign-6bcc06f3-4cba-4264-834f-bf43a5f1ad01.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:24 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:24 [info]: ::1 - - [28/Sep/2026:15:20:24 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:24 [info]: ::1 - - [28/Sep/2026:15:20:24 +0000] "GET /uploads/redesigns/redesign-90c605ef-1799-45c8-acd4-c743fdd44281.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:27 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:27 [info]: ::1 - - [28/Sep/2026:15:20:27 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:27 [info]: ::1 - - [28/Sep/2026:15:20:27 +0000] "GET /uploads/redesigns/redesign-0260bdc0-de4c-4754-a3d5-d1180ed78449.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:28 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:28 [info]: ::1 - - [28/Sep/2026:15:20:28 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:28 [info]: ::1 - - [28/Sep/2026:15:20:28 +0000] "GET /uploads/redesigns/redesign-05b032d9-8066-453f-9ddc-1d977dd22cc4.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:28 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:28 [info]: ::1 - - [28/Sep/2026:15:20:28 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:28 [info]: ::1 - - [28/Sep/2026:15:20:28 +0000] "GET /uploads/redesigns/redesign-ce61362b-dde0-4902-afd3-bfa0af1bdafe.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:30 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:30 [info]: ::1 - - [28/Sep/2026:15:20:30 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:30 [info]: ::1 - - [28/Sep/2026:15:20:30 +0000] "GET /uploads/redesigns/redesign-7a73e072-5eb2-4cd4-8cfd-f6c20260aa03.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:30 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:30 [info]: ::1 - - [28/Sep/2026:15:20:30 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:30 [info]: ::1 - - [28/Sep/2026:15:20:30 +0000] "GET /uploads/redesigns/redesign-56c7c060-c4c6-493e-b472-84494a8abef6.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:30 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:30 [info]: ::1 - - [28/Sep/2026:15:20:30 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:30 [info]: ::1 - - [28/Sep/2026:15:20:30 +0000] "GET /uploads/redesigns/redesign-c6c8cf79-2952-4b32-8842-b63ebeea8918.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:36 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:36 [info]: ::1 - - [28/Sep/2026:15:20:36 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:36 [info]: ::1 - - [28/Sep/2026:15:20:36 +0000] "GET /uploads/redesigns/redesign-1fcf90e0-28bd-47a5-8090-dd50cd8f920d.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:46 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:46 [info]: ::1 - - [28/Sep/2026:15:20:46 +0000] "POST /api/redesign HTTP/1.1" 200 843 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:46 [info]: ::1 - - [28/Sep/2026:15:20:46 +0000] "GET /uploads/redesigns/redesign-7e84056d-9b46-4493-b11d-1b2fffc1d2f9.svg HTTP/1.1" 200 6649 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:46 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:46 [info]: ::1 - - [28/Sep/2026:15:20:46 +0000] "POST /api/redesign HTTP/1.1" 200 843 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:46 [info]: ::1 - - [28/Sep/2026:15:20:46 +0000] "GET /uploads/redesigns/redesign-3ac8ccca-d3a4-4e69-a8a9-6e39f82787c4.svg HTTP/1.1" 200 6649 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:52 [info]: Image generation requested via provider: mock
+2026-09-28 20:50:52 [info]: ::1 - - [28/Sep/2026:15:20:52 +0000] "POST /api/redesign HTTP/1.1" 200 848 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:50:52 [info]: ::1 - - [28/Sep/2026:15:20:52 +0000] "GET /uploads/redesigns/redesign-d5b7bd72-2fd3-477f-a093-32ea034f3941.svg HTTP/1.1" 200 6654 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:25 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:25 [info]: ::1 - - [28/Sep/2026:15:21:25 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:26 [info]: ::1 - - [28/Sep/2026:15:21:26 +0000] "GET /api/health HTTP/1.1" 200 176 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:29 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:29 [info]: ::1 - - [28/Sep/2026:15:21:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:32 [info]: ::1 - - [28/Sep/2026:15:21:32 +0000] "GET /api/projects HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:32 [info]: ::1 - - [28/Sep/2026:15:21:32 +0000] "GET /api/projects HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:34 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:34 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:34 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:34 [info]: ::1 - - [28/Sep/2026:15:21:34 +0000] "GET /api/projects HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:38 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:38 [info]: ::1 - - [28/Sep/2026:15:21:38 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:43 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:43 [info]: ::1 - - [28/Sep/2026:15:21:43 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:47 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:47 [info]: ::1 - - [28/Sep/2026:15:21:47 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:51 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:51 [info]: ::1 - - [28/Sep/2026:15:21:51 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-28 20:51:55 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-28 20:51:55 [info]: ::1 - - [28/Sep/2026:15:21:55 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:26:58 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-29 11:26:58 [info]: 📊 Environment: development
+2026-09-29 11:26:58 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-29 11:27:23 [warn]: ⚠️  Database connection failed: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Running without database.
+2026-09-29 11:27:23 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:27:23 [info]: ::1 - - [29/Sep/2026:05:57:23 +0000] "GET /api/projects HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:27:27 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:27:27 [info]: ::1 - - [29/Sep/2026:05:57:27 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:28:03 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-29 11:28:18 [warn]: DB unavailable for website analysis
+2026-09-29 11:28:18 [info]: ::1 - - [29/Sep/2026:05:58:18 +0000] "POST /api/website/analyze HTTP/1.1" 200 6579 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:28:19 [info]: ::1 - - [29/Sep/2026:05:58:19 +0000] "GET /uploads/screenshots/screenshot-6dc9ba2d-df0d-470b-bc65-65c04704c1b6.png HTTP/1.1" 200 408463 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:34:22 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:34:22 [info]: ::1 - - [29/Sep/2026:06:04:22 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:34:26 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:34:26 [info]: ::1 - - [29/Sep/2026:06:04:26 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:34:30 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:34:30 [info]: ::1 - - [29/Sep/2026:06:04:30 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:34:34 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:34:34 [info]: ::1 - - [29/Sep/2026:06:04:34 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:35:40 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:35:40 [info]: ::1 - - [29/Sep/2026:06:05:40 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:35:44 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:35:44 [info]: ::1 - - [29/Sep/2026:06:05:44 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:35:50 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:35:50 [info]: ::1 - - [29/Sep/2026:06:05:50 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:35:54 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:35:54 [info]: ::1 - - [29/Sep/2026:06:05:54 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:36:59 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:36:59 [info]: ::1 - - [29/Sep/2026:06:06:59 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:37:03 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:37:03 [info]: ::1 - - [29/Sep/2026:06:07:03 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:37:07 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-29 11:37:18 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:37:18 [warn]: DB unavailable for website analysis
+2026-09-29 11:37:18 [info]: ::1 - - [29/Sep/2026:06:07:18 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:37:18 [info]: ::1 - - [29/Sep/2026:06:07:18 +0000] "POST /api/website/analyze HTTP/1.1" 200 6579 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:37:19 [info]: ::1 - - [29/Sep/2026:06:07:19 +0000] "GET /uploads/screenshots/screenshot-e6784251-d1ff-4a1d-a7cc-1e54974fde09.png HTTP/1.1" 200 1068299 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:37:22 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:37:22 [info]: ::1 - - [29/Sep/2026:06:07:22 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:38:33 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:38:33 [info]: ::1 - - [29/Sep/2026:06:08:33 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:38:37 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:38:37 [info]: ::1 - - [29/Sep/2026:06:08:37 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:40:55 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:40:55 [info]: ::1 - - [29/Sep/2026:06:10:55 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:40:59 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:40:59 [info]: ::1 - - [29/Sep/2026:06:10:59 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:41:17 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:41:17 [info]: ::1 - - [29/Sep/2026:06:11:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:41:21 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:41:21 [info]: ::1 - - [29/Sep/2026:06:11:21 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:41:58 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:41:58 [info]: ::1 - - [29/Sep/2026:06:11:58 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:42:01 [info]: ::1 - - [29/Sep/2026:06:12:01 +0000] "GET /api/projects HTTP/1.1" - - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:42:03 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:42:03 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:42:03 [info]: ::1 - - [29/Sep/2026:06:12:03 +0000] "GET /api/projects HTTP/1.1" 200 30 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:42:07 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:42:07 [info]: ::1 - - [29/Sep/2026:06:12:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:42:14 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:42:14 [info]: ::1 - - [29/Sep/2026:06:12:14 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:42:19 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:42:19 [info]: ::1 - - [29/Sep/2026:06:12:19 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:43:29 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:43:29 [info]: ::1 - - [29/Sep/2026:06:13:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:44:39 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:44:39 [info]: ::1 - - [29/Sep/2026:06:14:39 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-09-29 11:45:07 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:45:07 [info]: ::1 - - [29/Sep/2026:06:15:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:45:14 [error]: SyntaxError: Bad escaped character in JSON at position 10 (line 1 column 11)
+    at JSON.parse (<anonymous>)
+    at parse (B:\Projects\UI-UX_Analyzer\backend\node_modules\body-parser\lib\types\json.js:96:19)
+    at B:\Projects\UI-UX_Analyzer\backend\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (B:\Projects\UI-UX_Analyzer\backend\node_modules\raw-body\index.js:238:16)
+    at done (B:\Projects\UI-UX_Analyzer\backend\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (B:\Projects\UI-UX_Analyzer\backend\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+2026-09-29 11:45:14 [info]: ::1 - - [29/Sep/2026:06:15:14 +0000] "POST /api/analysis HTTP/1.1" 400 990 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.9444"
+2026-09-29 11:45:50 [info]: ::1 - - [29/Sep/2026:06:15:50 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "-" "node"
+2026-09-29 11:46:13 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:46:13 [info]: ::1 - - [29/Sep/2026:06:16:13 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:46:39 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-29 11:46:54 [warn]: DB unavailable for website analysis
+2026-09-29 11:46:54 [info]: ::1 - - [29/Sep/2026:06:16:54 +0000] "POST /api/website/analyze HTTP/1.1" 200 6579 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:46:55 [info]: ::1 - - [29/Sep/2026:06:16:55 +0000] "GET /uploads/screenshots/screenshot-6379041e-19e5-419e-a602-d773a2ff0d53.png HTTP/1.1" 200 429869 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:47:03 [info]: Image generation requested via provider: mock
+2026-09-29 11:47:03 [info]: ::1 - - [29/Sep/2026:06:17:03 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:47:03 [info]: ::1 - - [29/Sep/2026:06:17:03 +0000] "GET /uploads/redesigns/redesign-cc59d347-29b1-44b5-8571-419eae34c9f3.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:47:51 [info]: Image generation requested via provider: mock
+2026-09-29 11:47:51 [info]: ::1 - - [29/Sep/2026:06:17:51 +0000] "POST /api/redesign HTTP/1.1" 200 838 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:47:54 [info]: ::1 - - [29/Sep/2026:06:17:54 +0000] "GET /uploads/redesigns/redesign-e8fc4067-2080-4ceb-a4a1-9ca290418d71.svg HTTP/1.1" 200 6644 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:09 [info]: Image generation requested via provider: mock
+2026-09-29 11:48:09 [info]: ::1 - - [29/Sep/2026:06:18:09 +0000] "POST /api/redesign HTTP/1.1" 200 848 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:09 [info]: ::1 - - [29/Sep/2026:06:18:09 +0000] "GET /uploads/redesigns/redesign-548b7a80-3361-4f9e-9a1a-c3835bd41fc4.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:13 [info]: ::1 - - [29/Sep/2026:06:18:13 +0000] "GET /uploads/screenshots/screenshot-6379041e-19e5-419e-a602-d773a2ff0d53.png HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:23 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:48:23 [info]: ::1 - - [29/Sep/2026:06:18:23 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:27 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:48:27 [info]: ::1 - - [29/Sep/2026:06:18:27 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:31 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:48:31 [info]: ::1 - - [29/Sep/2026:06:18:31 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:35 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:48:35 [info]: ::1 - - [29/Sep/2026:06:18:35 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:39 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:48:39 [info]: ::1 - - [29/Sep/2026:06:18:39 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:48:57 [warn]: DB unavailable, proceeding without persistence:
+2026-09-29 11:49:01 [info]: ::1 - - [29/Sep/2026:06:19:01 +0000] "POST /api/analysis HTTP/1.1" 200 3649 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:01 [info]: ::1 - - [29/Sep/2026:06:19:01 +0000] "GET /uploads/65d7b9ba-f689-4c13-b53c-073322f259da.png HTTP/1.1" 200 157144 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:05 [info]: Image generation requested via provider: mock
+2026-09-29 11:49:05 [info]: ::1 - - [29/Sep/2026:06:19:05 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:05 [info]: ::1 - - [29/Sep/2026:06:19:05 +0000] "GET /uploads/redesigns/redesign-ac6b13e8-a968-46ac-ade9-e94a8e54c89a.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:17 [info]: ::1 - - [29/Sep/2026:06:19:17 +0000] "GET /uploads/65d7b9ba-f689-4c13-b53c-073322f259da.png HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:17 [info]: ::1 - - [29/Sep/2026:06:19:17 +0000] "GET /uploads/redesigns/redesign-ac6b13e8-a968-46ac-ade9-e94a8e54c89a.svg HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:55 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:49:55 [info]: ::1 - - [29/Sep/2026:06:19:55 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:49:59 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:49:59 [info]: ::1 - - [29/Sep/2026:06:19:59 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:50:24 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:50:24 [info]: ::1 - - [29/Sep/2026:06:20:24 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:50:28 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:50:28 [info]: ::1 - - [29/Sep/2026:06:20:28 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:50:30 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-29 11:50:42 [warn]: DB unavailable for website analysis
+2026-09-29 11:50:42 [info]: ::1 - - [29/Sep/2026:06:20:42 +0000] "POST /api/website/analyze HTTP/1.1" 200 6579 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:50:43 [info]: ::1 - - [29/Sep/2026:06:20:43 +0000] "GET /uploads/screenshots/screenshot-305113dd-e9ad-41b0-aedf-d9994fc41fb7.png HTTP/1.1" 200 423055 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:50:46 [info]: Image generation requested via provider: mock
+2026-09-29 11:50:46 [info]: ::1 - - [29/Sep/2026:06:20:46 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:50:47 [info]: ::1 - - [29/Sep/2026:06:20:47 +0000] "GET /uploads/redesigns/redesign-8c32c6cb-e0c5-4c64-b4b8-71d1b47c4496.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:51:09 [info]: ::1 - - [29/Sep/2026:06:21:09 +0000] "GET /uploads/screenshots/screenshot-305113dd-e9ad-41b0-aedf-d9994fc41fb7.png HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:51:15 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:51:15 [info]: ::1 - - [29/Sep/2026:06:21:15 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:51:19 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:51:19 [info]: ::1 - - [29/Sep/2026:06:21:19 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:54:37 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:54:37 [info]: ::1 - - [29/Sep/2026:06:24:37 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:54:41 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:54:41 [info]: ::1 - - [29/Sep/2026:06:24:41 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:57:02 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:57:02 [info]: ::1 - - [29/Sep/2026:06:27:02 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:57:07 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:57:07 [info]: ::1 - - [29/Sep/2026:06:27:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 11:57:49 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:57:49 [info]: ::1 - - [29/Sep/2026:06:27:49 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "node"
+2026-09-29 11:59:05 [info]: ::1 - - [29/Sep/2026:06:29:05 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "-" "node"
+2026-09-29 11:59:09 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:59:09 [info]: ::1 - - [29/Sep/2026:06:29:09 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "node"
+2026-09-29 11:59:13 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:59:13 [warn]: Database unavailable for getProjects, returning empty list:
+2026-09-29 11:59:13 [info]: ::1 - - [29/Sep/2026:06:29:13 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "node"
+2026-09-29 11:59:13 [info]: ::1 - - [29/Sep/2026:06:29:13 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 12:35:37 [info]: ::1 - - [29/Sep/2026:07:05:37 +0000] "POST /api/analysis HTTP/1.1" 200 5955 "-" "node"
+2026-09-29 12:44:46 [warn]: ⚠️  Database connection failed: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Running without database.
+2026-09-29 12:45:34 [warn]: ⚠️  Database unavailable: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Using persistent JSON store fallback.
+2026-09-29 12:52:26 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-29 12:52:26 [info]: 📊 Environment: development
+2026-09-29 12:52:26 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-29 13:08:07 [info]: ::1 - - [29/Sep/2026:07:38:07 +0000] "GET /api/projects HTTP/1.1" 200 30 "-" "node"
+2026-09-29 13:08:11 [warn]: ⚠️  Database unavailable: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Using persistent JSON store fallback.
+2026-09-29 13:17:13 [info]: 🚀 Backend server running on http://localhost:3001
+2026-09-29 13:17:13 [info]: 📊 Environment: development
+2026-09-29 13:17:13 [info]: 🤖 AI Service: http://localhost:8000
+2026-09-29 13:17:26 [info]: Starting website analysis for: https://www.keezenix.com/
+2026-09-29 13:17:36 [info]: ::1 - - [29/Sep/2026:07:47:36 +0000] "POST /api/website/analyze HTTP/1.1" 200 6682 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:17:36 [info]: ::1 - - [29/Sep/2026:07:47:36 +0000] "GET /uploads/screenshots/screenshot-6ca518f3-fcf1-4057-ac09-3b6c4926d3dd.png HTTP/1.1" 200 1083235 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:17:39 [info]: Image generation requested via provider: mock
+2026-09-29 13:17:39 [info]: ::1 - - [29/Sep/2026:07:47:39 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:17:39 [info]: ::1 - - [29/Sep/2026:07:47:39 +0000] "GET /uploads/redesigns/redesign-d7eec0f3-e1d5-4e66-9cfe-d160ec4c031f.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:17:40 [warn]: ⚠️  Database unavailable: Can't reach database server at `localhost:5432`
+
+Please make sure your database server is running at `localhost:5432`.. Using persistent JSON store fallback.
+2026-09-29 13:18:05 [info]: Image generation requested via provider: mock
+2026-09-29 13:18:05 [info]: ::1 - - [29/Sep/2026:07:48:05 +0000] "POST /api/redesign HTTP/1.1" 200 810 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:05 [info]: ::1 - - [29/Sep/2026:07:48:05 +0000] "GET /uploads/redesigns/redesign-b6dd0e64-519b-444a-a99c-7011809f6b78.svg HTTP/1.1" 200 6653 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:18 [info]: ::1 - - [29/Sep/2026:07:48:18 +0000] "GET /uploads/screenshots/screenshot-6ca518f3-fcf1-4057-ac09-3b6c4926d3dd.png HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:21 [info]: ::1 - - [29/Sep/2026:07:48:21 +0000] "GET /api/projects HTTP/1.1" 200 14724 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:21 [info]: ::1 - - [29/Sep/2026:07:48:21 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:27 [info]: ::1 - - [29/Sep/2026:07:48:27 +0000] "GET /uploads/screenshot-6ca518f3-fcf1-4057-ac09-3b6c4926d3dd.png HTTP/1.1" 404 97 "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:29 [info]: ::1 - - [29/Sep/2026:07:48:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:29 [info]: ::1 - - [29/Sep/2026:07:48:29 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:43 [info]: ::1 - - [29/Sep/2026:07:48:43 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:45 [info]: ::1 - - [29/Sep/2026:07:48:45 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:47 [info]: ::1 - - [29/Sep/2026:07:48:47 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:47 [info]: ::1 - - [29/Sep/2026:07:48:47 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:51 [info]: ::1 - - [29/Sep/2026:07:48:51 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:51 [info]: ::1 - - [29/Sep/2026:07:48:51 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:54 [info]: ::1 - - [29/Sep/2026:07:48:54 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:18:54 [info]: ::1 - - [29/Sep/2026:07:48:54 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:26:09 [info]: ::1 - - [29/Sep/2026:07:56:09 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:26:09 [info]: ::1 - - [29/Sep/2026:07:56:09 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:26:45 [info]: ::1 - - [29/Sep/2026:07:56:45 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:26:45 [info]: ::1 - - [29/Sep/2026:07:56:45 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:05 [info]: ::1 - - [29/Sep/2026:07:57:05 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:05 [info]: ::1 - - [29/Sep/2026:07:57:05 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:07 [info]: ::1 - - [29/Sep/2026:07:57:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:07 [info]: ::1 - - [29/Sep/2026:07:57:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:07 [info]: ::1 - - [29/Sep/2026:07:57:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:07 [info]: ::1 - - [29/Sep/2026:07:57:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:12 [info]: ::1 - - [29/Sep/2026:07:57:12 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:12 [info]: ::1 - - [29/Sep/2026:07:57:12 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:15 [info]: ::1 - - [29/Sep/2026:07:57:15 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:15 [info]: ::1 - - [29/Sep/2026:07:57:15 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:17 [info]: ::1 - - [29/Sep/2026:07:57:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:27:17 [info]: ::1 - - [29/Sep/2026:07:57:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:51:07 [info]: ::1 - - [29/Sep/2026:08:21:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 13:51:07 [info]: ::1 - - [29/Sep/2026:08:21:07 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 14:48:31 [info]: ::1 - - [29/Sep/2026:09:18:31 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 14:48:31 [info]: ::1 - - [29/Sep/2026:09:18:31 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 15:33:17 [info]: ::1 - - [29/Sep/2026:10:03:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 15:33:17 [info]: ::1 - - [29/Sep/2026:10:03:17 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 17:18:06 [info]: ::1 - - [29/Sep/2026:11:48:06 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
+2026-09-29 17:18:06 [info]: ::1 - - [29/Sep/2026:11:48:06 +0000] "GET /api/projects HTTP/1.1" 304 - "http://localhost:5173/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"
